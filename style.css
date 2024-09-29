@@ -296,7 +296,7 @@ h3::after {
   transition: 0.6s;
   transform: scaleX(0);
 }
-h3:hover:after {
+h3:hover::after {
   position: absolute;
   background-color: #fff;
   transform: scaleX(1);

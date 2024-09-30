@@ -9,11 +9,12 @@ header img {
   width: 105%;
 }
 header {
-  background-color: rgba(58, 25, 25, 0.988);
-  color: white;
+  background-color: rgba(42, 19, 19, 0.988);
+  color: rgb(255, 255, 255);
   width: 105%;
   z-index: 1;
   position: relative;
+ 
 }
 html {
   overflow-x: hidden;
@@ -24,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
+  
 }
 /* sidebar start*/
 .bar {
@@ -205,14 +207,38 @@ section {
   position: absolute;
   right: 200px;
   bottom: 40%;
-  padding: 15px 50px;
   font-size: 17px;
   border: 1px solid;
   width: 250px;
   height: 50px;
   background-color: transparent;
+  cursor:pointer;
+  z-index: 1;
+  transition: 0.5s;
+}
+.section2 button::before{
+  content:'';
+  position: absolute;
+  right:0;
+  width:0%;
+  height:100%;
+  background-color: #3b0d0d;
+  transform: translateY(-30%);
+  transition: 0.4s;
+  z-index: -1;
+  
 }
 
+.section2 button:hover{
+  color:#fff;
+  border: none;
+}
+.section2 button:hover::before{
+  width:100%;
+  left:0;
+  right: unset;
+
+}
 
 .butik {
   display: flex;
@@ -243,6 +269,7 @@ section {
 .text_butik h1 {
   position: relative;
   bottom: 50px;
+ 
 }
 .text_butik p {
   position: relative;
@@ -256,6 +283,7 @@ section {
   border-radius: 10px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 
 footer {
@@ -296,7 +324,7 @@ h3::after {
   transition: 0.6s;
   transform: scaleX(0);
 }
-h3:hover::after {
+h3:hover:after {
   position: absolute;
   background-color: #fff;
   transform: scaleX(1);
@@ -307,7 +335,7 @@ h3:hover::after {
   .bar{transform: scale(0.8);
     left:-600px;
     top:-90px;
-    height:100%
+    height:100%;
   }
   .bar.active{left:-30px;
     top:-90px;

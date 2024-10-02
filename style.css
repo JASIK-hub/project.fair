@@ -332,15 +332,19 @@ h3:hover:after {
 
 
 @media screen and (max-width: 600px) {
-  .bar{transform: scale(0.8);
-    left:-600px;
-    top:-90px;
+  .bar{
+    top:0;
+    width:199px;
+    height:100%
  
+  
   }
-  .bar.active{left:-30px;
-    top:-90px;
- }
+  .bar.active{
+    left:0;}
   .icon.active{left:150px;
+ }
+ .bar ul{
+  font-size: 16px;
  }
   body {
     width: 100%;

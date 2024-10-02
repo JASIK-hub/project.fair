@@ -143,17 +143,18 @@ button {
 .icon {
   transform: scale(0.8) translateY(-50%);
 }
-.bar {
-  transform: scale(0.8);
-  left: -600px;
-  top: -90px;
-  height: 100%;
-}
-.bar.active {
-  left: -30px;
-  top: -90px;
-  height: 100%;
-}
+ .bar{
+    top:0;
+    width:199px;
+    height:100%
+ 
+  
+  }
+  .bar.active{
+    left:0;}
+ .bar ul{
+  font-size: 16px;
+ }
 .icon.active {
   left: 150px;
 }}

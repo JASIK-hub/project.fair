@@ -141,17 +141,18 @@ a {
   color: rgb(255, 255, 255);
 }
 @media screen and (max-width: 600px) {
-  .bar {
-    transform: scale(0.8);
-    left: -600px;
-    top: -90px;
-    height: 100%;
+  .bar{
+    top:0;
+    width:199px;
+    height:100%
+ 
+  
   }
-  .bar.active {
-    left: -30px;
-    top: -90px;
-    height: 100%;
-  }
+  .bar.active{
+    left:0;}
+ .bar ul{
+  font-size: 16px;
+ }
   .icon.active {
     left: 150px;
   }

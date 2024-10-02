@@ -335,11 +335,11 @@ h3:hover:after {
   .bar{transform: scale(0.8);
     left:-600px;
     top:-90px;
-    height:100%;
+ 
   }
   .bar.active{left:-30px;
     top:-90px;
-    height:100%}
+ }
   .icon.active{left:150px;
  }
   body {
